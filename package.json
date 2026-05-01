@@ -1,54 +1,22 @@
 {
-  "name": "my-project",
+  "name": "darts-game",
   "version": "1.0.0",
-  "description": "A modern JavaScript/TypeScript project",
-  "main": "index.js",
-  "type": "module",
+  "description": "MERN stack darts game application",
+  "main": "server/server.js",
   "scripts": {
-    "dev": "node index.js",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "type-check": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
   },
-  "keywords": [
-    "javascript",
-    "typescript",
-    "node",
-    "eslint",
-    "prettier"
-  ],
+  "keywords": ["darts", "game", "mern", "react", "nodejs", "mongodb"],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
-    "@types/node": "^20.11.0",
-    "eslint": "^9.0.0",
-    "globals": "^15.0.0",
-    "husky": "^9.0.0",
-    "lint-staged": "^15.0.0",
-    "prettier": "^3.2.0",
-    "typescript": "^5.3.0"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,md,yml,yaml,css,scss,html}": [
-      "prettier --write"
-    ]
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
+    "concurrently": "^7.6.0"
   }
 }
