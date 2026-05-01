@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+dist/
+lib/
+coverage/
+
+# Generated files
+*.min.js
+*.min.css
+
+# Package files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+public/
+.cache/
+
+# Temporary files
+tmp/
+temp/
+
+# Documentation
+CHANGELOG.md
+LICENSE
+
+# Config files that should maintain their formatting
+.gitignore
+.editorconfig
+.nvmrc
