@@ -5,6 +5,7 @@ import PlayersPage from './pages/PlayersPage'
 import ScoringPage from './pages/ScoringPage'
 import TournamentPage from './pages/TournamentPage'
 import StatsPage from './pages/StatsPage'
+import GameHistoryPage from './pages/GameHistoryPage'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/scoring" element={<ScoringPage />} />
         <Route path="/tournament" element={<TournamentPage />} />
         <Route path="/stats" element={<StatsPage />} />
+        <Route path="/history" element={<GameHistoryPage />} />
       </Routes>
     </div>
   )

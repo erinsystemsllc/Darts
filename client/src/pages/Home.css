@@ -1,0 +1,209 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.game-actions {
+  text-align: center;
+}
+
+.play-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+  background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+.home-stats-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.stats-overview {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stats-overview h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navigation-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+}
+
+.nav-button:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.stats-button {
+  border-left-color: #28a745;
+}
+
+.stats-button:hover {
+  background-color: #f8fff9;
+}
+
+.history-button {
+  border-left-color: #ffc107;
+}
+
+.history-button:hover {
+  background-color: #fffef8;
+}
+
+.button-icon {
+  font-size: 2.5rem;
+  margin-right: 20px;
+  min-width: 60px;
+}
+
+.button-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.button-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 20px 15px;
+  }
+  
+  .home-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .home-stats-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-button {
+    padding: 20px;
+  }
+  
+  .button-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    min-width: 50px;
+  }
+  
+  .button-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .button-content p {
+    font-size: 0.9rem;
+  }
+}

@@ -35,6 +35,12 @@ const HomePage = () => {
           <h3>Statistics Tracking</h3>
           <p>Comprehensive analytics and performance tracking for all players</p>
         </Link>
+
+        <Link to="/history" className="feature-card">
+          <div className="feature-icon">📜</div>
+          <h3>Game History</h3>
+          <p>View your past games, results, and track your progress over time</p>
+        </Link>
       </div>
 
       <div className="quick-start">
