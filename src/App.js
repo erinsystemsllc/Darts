@@ -1,14 +1,17 @@
 import React from 'react';
-import Counter from './components/Counter';
 import './App.css';
+import Toolbar from './components/Toolbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>React Number Counter</h1>
-        <Counter />
-      </header>
+      <Toolbar />
+      <main className="main-content">
+        <header className="App-header">
+          <h1>Welcome to the Application</h1>
+          <p>This is the main content area of the application.</p>
+        </header>
+      </main>
     </div>
   );
 }
