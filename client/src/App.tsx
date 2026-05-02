@@ -1,27 +1,13 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import HomePage from './pages/HomePage'
-import PlayersPage from './pages/PlayersPage'
-import ScoringPage from './pages/ScoringPage'
-import TournamentPage from './pages/TournamentPage'
-import StatsPage from './pages/StatsPage'
-import GameHistoryPage from './pages/GameHistoryPage'
-import './App.css'
+import React from 'react';
+import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/players" element={<PlayersPage />} />
-        <Route path="/scoring" element={<ScoringPage />} />
-        <Route path="/tournament" element={<TournamentPage />} />
-        <Route path="/stats" element={<StatsPage />} />
-        <Route path="/history" element={<GameHistoryPage />} />
-      </Routes>
+    <div className="app-container">
+      <h1>Welcome to the Single Page Application</h1>
+      <p>This app was refactored into a Vite + React project.</p>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
